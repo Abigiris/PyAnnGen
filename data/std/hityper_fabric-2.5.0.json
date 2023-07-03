@@ -1,0 +1,6962 @@
+{
+    "fabric-2.5.0/fabric/__init__.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/fabric/__main__.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/fabric/_version.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/fabric/config.py": {
+        "Config.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "ssh_config": [
+                    "None",
+                    "SSHConfig"
+                ],
+                "explicit": [
+                    "bool"
+                ]
+            }
+        },
+        "Config._clone_init_kwargs": {
+            "name": "_clone_init_kwargs",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "kw": [],
+                "args": []
+            },
+            "variables": {
+                "new_config": [
+                    "SSHConfig"
+                ]
+            }
+        },
+        "Config._load_ssh_file": {
+            "name": "_load_ssh_file",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "path": []
+            },
+            "variables": {
+                "old_rules": [
+                    "int"
+                ],
+                "fd": [
+                    "typing.IO"
+                ],
+                "new_rules": [
+                    "int"
+                ],
+                "msg": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Config._load_ssh_files": {
+            "name": "_load_ssh_files",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "_runtime_ssh_path": [
+                    "None"
+                ],
+                "msg": [
+                    "str"
+                ]
+            }
+        },
+        "Config.clone": {
+            "name": "clone",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "attr": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Config.from_v1": {
+            "name": "from_v1",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "cls": [],
+                "env": [],
+                "kwargs": []
+            },
+            "variables": {
+                "data": [
+                    "dict"
+                ],
+                "subdict": [
+                    "typing.Text"
+                ],
+                "env_": [
+                    "None"
+                ]
+            }
+        },
+        "global": {},
+        "Config.global_defaults": {
+            "name": "global_defaults",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {
+                "ours": [
+                    "dict[typing.Text, typing.Union[bool,None,dict[typing.Text, bool],dict[typing.Text, typing.Text],dict[typing.Text, None]]]"
+                ]
+            }
+        },
+        "Config.load_ssh_config": {
+            "name": "load_ssh_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config.set_runtime_ssh_path": {
+            "name": "set_runtime_ssh_path",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "path": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/exceptions.py": {
+        "GroupException.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "result": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/fabric/executor.py": {
+        "Executor.anonymous": {
+            "name": "anonymous",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "Executor.dedupe": {
+            "name": "dedupe",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "tasks": []
+            },
+            "variables": {}
+        },
+        "Executor.expand_calls": {
+            "name": "expand_calls",
+            "location": -1,
+            "return": [
+                "list[Call]"
+            ],
+            "arguments": {
+                "calls": [],
+                "apply_hosts": [
+                    "bool"
+                ]
+            },
+            "variables": {
+                "ret": [
+                    "list",
+                    "list[Call]"
+                ],
+                "cli_hosts": [
+                    "list"
+                ],
+                "apply_hosts": [
+                    "bool"
+                ],
+                "call": [
+                    "Task",
+                    "Call"
+                ],
+                "anon": [
+                    "Call"
+                ]
+            }
+        },
+        "global": {},
+        "Executor.normalize_hosts": {
+            "name": "normalize_hosts",
+            "location": -1,
+            "return": [
+                "list"
+            ],
+            "arguments": {
+                "hosts": []
+            },
+            "variables": {
+                "dicts": [
+                    "list"
+                ]
+            }
+        },
+        "Executor.parameterize": {
+            "name": "parameterize",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "call": [],
+                "connection_init_kwargs": []
+            },
+            "variables": {
+                "msg": [
+                    "typing.Text"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/fabric/group.py": {
+        "Group.__enter__": {
+            "name": "__enter__",
+            "location": -1,
+            "return": [
+                "Group"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Group.__exit__": {
+            "name": "__exit__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "exc": []
+            },
+            "variables": {}
+        },
+        "Group.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "hosts": []
+            },
+            "variables": {}
+        },
+        "GroupResult.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "_successes": [
+                    "dict"
+                ],
+                "_failures": [
+                    "dict"
+                ]
+            }
+        },
+        "GroupResult._bifurcate": {
+            "name": "_bifurcate",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "value": [
+                    "BaseException"
+                ]
+            }
+        },
+        "Group.close": {
+            "name": "close",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "GroupResult.failed": {
+            "name": "failed",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "Group.from_connections": {
+            "name": "from_connections",
+            "location": -1,
+            "return": [
+                "list"
+            ],
+            "arguments": {
+                "cls": [],
+                "connections": []
+            },
+            "variables": {
+                "group": [
+                    "list"
+                ]
+            }
+        },
+        "Group.get": {
+            "name": "get",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "global": {},
+        "Group.run": {
+            "name": "run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "SerialGroup.run": {
+            "name": "run",
+            "location": -1,
+            "return": [
+                "GroupResult"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "results": [
+                    "GroupResult"
+                ],
+                "excepted": [
+                    "bool"
+                ],
+                "e": [
+                    "Exception"
+                ]
+            }
+        },
+        "ThreadingGroup.run": {
+            "name": "run",
+            "location": -1,
+            "return": [
+                "GroupResult"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "results": [
+                    "GroupResult"
+                ],
+                "queue": [
+                    "Queue"
+                ],
+                "threads": [
+                    "list",
+                    "list[ExceptionHandlingThread]"
+                ],
+                "thread": [
+                    "ExceptionHandlingThread"
+                ],
+                "excepted": [
+                    "bool"
+                ],
+                "wrapper": [
+                    "None"
+                ]
+            }
+        },
+        "GroupResult.succeeded": {
+            "name": "succeeded",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "thread_worker": {
+            "name": "thread_worker",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "cxn": [],
+                "queue": [],
+                "args": [],
+                "kwargs": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/main.py": {
+        "Fab._remainder_only": {
+            "name": "_remainder_only",
+            "location": -1,
+            "return": [
+                "bool"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab.core_args": {
+            "name": "core_args",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {
+                "my_args": [
+                    "list[Argument]"
+                ]
+            }
+        },
+        "Fab.create_config": {
+            "name": "create_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "Fab.load_collection": {
+            "name": "load_collection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "collection": [
+                    "Collection"
+                ]
+            }
+        },
+        "make_program": {
+            "name": "make_program",
+            "location": -1,
+            "return": [
+                "Fab"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab.no_tasks_given": {
+            "name": "no_tasks_given",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab.print_version": {
+            "name": "print_version",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab.update_config": {
+            "name": "update_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "connect_kwargs": [
+                    "dict",
+                    "dict[typing.Text, ]"
+                ],
+                "prompt": [
+                    "typing.Text"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/fabric/runners.py": {
+        "Remote.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "Result.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "Remote._write_proc_stdin": {
+            "name": "_write_proc_stdin",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "data": []
+            },
+            "variables": {}
+        },
+        "Remote.close_proc_stdin": {
+            "name": "close_proc_stdin",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote.generate_result": {
+            "name": "generate_result",
+            "location": -1,
+            "return": [
+                "Result"
+            ],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "global": {},
+        "Remote.kill": {
+            "name": "kill",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote.process_is_finished": {
+            "name": "process_is_finished",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote.read_proc_stderr": {
+            "name": "read_proc_stderr",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "num_bytes": []
+            },
+            "variables": {}
+        },
+        "Remote.read_proc_stdout": {
+            "name": "read_proc_stdout",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "num_bytes": []
+            },
+            "variables": {}
+        },
+        "Remote.returncode": {
+            "name": "returncode",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote.send_interrupt": {
+            "name": "send_interrupt",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "interrupt": []
+            },
+            "variables": {}
+        },
+        "Remote.start": {
+            "name": "start",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "command": [],
+                "shell": [],
+                "env": [],
+                "timeout": [
+                    "None"
+                ]
+            },
+            "variables": {
+                "parameters": [
+                    "str"
+                ],
+                "command": [
+                    "str"
+                ]
+            }
+        },
+        "Remote.stop": {
+            "name": "stop",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/tasks.py": {
+        "ConnectionCall.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "Task.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "ConnectionCall.__repr__": {
+            "name": "__repr__",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "ConnectionCall.clone_kwargs": {
+            "name": "clone_kwargs",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "ConnectionCall.make_context": {
+            "name": "make_context",
+            "location": -1,
+            "return": [
+                "Connection"
+            ],
+            "arguments": {
+                "config": []
+            },
+            "variables": {}
+        },
+        "task": {
+            "name": "task",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "kwargs": [
+                    "Task"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/fabric/testing/__init__.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/fabric/testing/base.py": {
+        "Command.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "cmd": [
+                    "None"
+                ],
+                "out": [
+                    "bytes"
+                ],
+                "err": [
+                    "bytes"
+                ],
+                "in_": [
+                    "None"
+                ],
+                "exit": [
+                    "int"
+                ],
+                "waits": [
+                    "int"
+                ]
+            },
+            "variables": {
+                "cmd": [
+                    "None"
+                ],
+                "out": [
+                    "bytes"
+                ],
+                "err": [
+                    "bytes"
+                ],
+                "in_": [
+                    "None"
+                ],
+                "exit": [
+                    "int"
+                ],
+                "waits": [
+                    "int"
+                ]
+            }
+        },
+        "MockChannel.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "MockRemote.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "MockSFTP.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "autostart": [
+                    "bool"
+                ]
+            },
+            "variables": {
+                "autostart": [
+                    "bool"
+                ]
+            }
+        },
+        "Session.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "host": [
+                    "None"
+                ],
+                "user": [
+                    "None"
+                ],
+                "port": [
+                    "None"
+                ],
+                "commands": [
+                    "None"
+                ],
+                "cmd": [
+                    "None"
+                ],
+                "out": [
+                    "None"
+                ],
+                "in_": [
+                    "None"
+                ],
+                "err": [
+                    "None"
+                ],
+                "exit": [
+                    "None"
+                ],
+                "waits": [
+                    "None"
+                ]
+            },
+            "variables": {
+                "cmd": [
+                    "None"
+                ],
+                "out": [
+                    "None"
+                ],
+                "err": [
+                    "None"
+                ],
+                "exit": [
+                    "None"
+                ],
+                "waits": [
+                    "None"
+                ],
+                "params": [
+                    "None"
+                ],
+                "commands": [
+                    "None",
+                    "list[Command]"
+                ],
+                "host": [
+                    "None"
+                ],
+                "user": [
+                    "None"
+                ],
+                "port": [
+                    "None"
+                ],
+                "kwargs": [
+                    "dict",
+                    "dict[typing.Text, ]"
+                ],
+                "in_": [
+                    "None"
+                ]
+            }
+        },
+        "Command.__repr__": {
+            "name": "__repr__",
+            "location": -1,
+            "return": [
+                "str"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "MockChannel._get_child_mock": {
+            "name": "_get_child_mock",
+            "location": -1,
+            "return": [
+                "Mock"
+            ],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "MockRemote.expect": {
+            "name": "expect",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "MockRemote.expect_sessions": {
+            "name": "expect_sessions",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "sessions": []
+            },
+            "variables": {}
+        },
+        "MockSFTP.fake_abspath": {
+            "name": "fake_abspath",
+            "location": -1,
+            "return": [
+                "str"
+            ],
+            "arguments": {
+                "path": []
+            },
+            "variables": {}
+        },
+        "Session.generate_mocks": {
+            "name": "generate_mocks",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "client": [
+                    "Mock"
+                ],
+                "type()_": [
+                    "PropertyMock"
+                ],
+                "channels": [
+                    "list",
+                    "list[MockChannel]"
+                ],
+                "channel": [
+                    "MockChannel"
+                ],
+                "transport_": [
+                    "list[MockChannel]"
+                ]
+            }
+        },
+        "global": {},
+        "MockChannel.recv": {
+            "name": "recv",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "count": []
+            },
+            "variables": {}
+        },
+        "MockChannel.recv_stderr": {
+            "name": "recv_stderr",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "count": []
+            },
+            "variables": {}
+        },
+        "MockRemote.sanity": {
+            "name": "sanity",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Session.sanity_check": {
+            "name": "sanity_check",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "session_opens": [
+                    "list"
+                ]
+            }
+        },
+        "MockChannel.sendall": {
+            "name": "sendall",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "data": []
+            },
+            "variables": {}
+        },
+        "MockRemote.start": {
+            "name": "start",
+            "location": -1,
+            "return": [
+                "list"
+            ],
+            "arguments": {},
+            "variables": {
+                "clients": [
+                    "list"
+                ],
+                "SSHClient_": [
+                    "list"
+                ]
+            }
+        },
+        "MockSFTP.start": {
+            "name": "start",
+            "location": -1,
+            "return": [
+                "tuple"
+            ],
+            "arguments": {},
+            "variables": {
+                "mock_os_": [
+                    "int"
+                ],
+                "sftp_": [
+                    "typing.Text",
+                    "int"
+                ],
+                "fake_mode": [
+                    "int"
+                ]
+            }
+        },
+        "MockRemote.stop": {
+            "name": "stop",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "MockSFTP.stop": {
+            "name": "stop",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/testing/fixtures.py": {
+        "client": {
+            "name": "client",
+            "location": -1,
+            "return": [
+                "typing.Generator"
+            ],
+            "arguments": {},
+            "variables": {
+                "client_": [
+                    "Mock"
+                ]
+            }
+        },
+        "connection": {
+            "name": "connection",
+            "location": -1,
+            "return": [
+                "typing.Generator[Connection]"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "c_": [
+                    "bool",
+                    "Mock"
+                ]
+            }
+        },
+        "global": {},
+        "remote": {
+            "name": "remote",
+            "location": -1,
+            "return": [
+                "typing.Generator[MockRemote]"
+            ],
+            "arguments": {},
+            "variables": {
+                "remote": [
+                    "MockRemote"
+                ]
+            }
+        },
+        "sftp": {
+            "name": "sftp",
+            "location": -1,
+            "return": [
+                "typing.Generator[tuple[Transfer]]"
+            ],
+            "arguments": {},
+            "variables": {
+                "mock": [
+                    "MockSFTP"
+                ],
+                "transfer": [
+                    "Transfer"
+                ]
+            }
+        },
+        "sftp_objs": {
+            "name": "sftp_objs",
+            "location": -1,
+            "return": [
+                "typing.Generator"
+            ],
+            "arguments": {
+                "sftp": []
+            },
+            "variables": {}
+        },
+        "transfer": {
+            "name": "transfer",
+            "location": -1,
+            "return": [
+                "typing.Generator"
+            ],
+            "arguments": {
+                "sftp": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/transfer.py": {
+        "Result.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "local": [],
+                "orig_local": [],
+                "remote": [],
+                "orig_remote": [],
+                "connection": []
+            },
+            "variables": {}
+        },
+        "Transfer.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "connection": []
+            },
+            "variables": {}
+        },
+        "Transfer.get": {
+            "name": "get",
+            "location": -1,
+            "return": [
+                "Result"
+            ],
+            "arguments": {
+                "remote": [],
+                "local": [
+                    "None"
+                ],
+                "preserve_mode": [
+                    "bool"
+                ]
+            },
+            "variables": {
+                "local": [
+                    "None"
+                ],
+                "orig_local": [
+                    "None"
+                ],
+                "is_file_like": [
+                    "bool"
+                ],
+                "preserve_mode": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {},
+        "Transfer.is_remote_dir": {
+            "name": "is_remote_dir",
+            "location": -1,
+            "return": [
+                "bool"
+            ],
+            "arguments": {
+                "path": []
+            },
+            "variables": {}
+        },
+        "Transfer.put": {
+            "name": "put",
+            "location": -1,
+            "return": [
+                "Result"
+            ],
+            "arguments": {
+                "local": [],
+                "remote": [
+                    "None"
+                ],
+                "preserve_mode": [
+                    "bool"
+                ]
+            },
+            "variables": {
+                "is_file_like": [
+                    "bool"
+                ],
+                "remote": [
+                    "None"
+                ],
+                "orig_remote": [
+                    "None"
+                ],
+                "prejoined_remote": [
+                    "None"
+                ],
+                "msg": [
+                    "typing.Text"
+                ],
+                "preserve_mode": [
+                    "bool"
+                ]
+            }
+        },
+        "Transfer.sftp": {
+            "name": "sftp",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/tunnels.py": {
+        "Tunnel.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "channel": [],
+                "sock": [],
+                "finished": []
+            },
+            "variables": {
+                "socket_chunk_size": [
+                    "int"
+                ],
+                "channel_chunk_size": [
+                    "int"
+                ]
+            }
+        },
+        "TunnelManager.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "local_host": [],
+                "local_port": [],
+                "remote_host": [],
+                "remote_port": [],
+                "transport": [],
+                "finished": []
+            },
+            "variables": {
+                "local_address": [
+                    "tuple"
+                ],
+                "remote_address": [
+                    "tuple"
+                ]
+            }
+        },
+        "Tunnel._run": {
+            "name": "_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "empty_sock": [
+                    "None"
+                ],
+                "empty_chan": [
+                    "None"
+                ]
+            }
+        },
+        "TunnelManager._run": {
+            "name": "_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "tunnels": [
+                    "list",
+                    "list[Tunnel]"
+                ],
+                "e": [
+                    "Exception"
+                ],
+                "e_": [
+                    "errno_@_EAGAIN"
+                ],
+                "finished": [
+                    "Event"
+                ],
+                "tunnel": [
+                    "Tunnel"
+                ],
+                "exceptions": [
+                    "list"
+                ]
+            }
+        },
+        "global": {},
+        "Tunnel.read_and_write": {
+            "name": "read_and_write",
+            "location": -1,
+            "return": [
+                "bool"
+            ],
+            "arguments": {
+                "reader": [],
+                "writer": [],
+                "chunk_size": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/fabric/util.py": {
+        "get_local_user": {
+            "name": "get_local_user",
+            "location": -1,
+            "return": [],
+            "arguments": {},
+            "variables": {
+                "username": [
+                    "None"
+                ],
+                "win32": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/integration/concurrency.py": {
+        "_worker": {
+            "name": "_worker",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "queue": [],
+                "cxn": [],
+                "start": [],
+                "num_words": [],
+                "count": [],
+                "expected": []
+            },
+            "variables": {
+                "_words": [
+                    "typing.Text"
+                ],
+                "cmd": [
+                    "str"
+                ],
+                "result": [
+                    "list"
+                ]
+            }
+        },
+        "concurrency.connections_objects_do_not_share_connection_state": {
+            "name": "connections_objects_do_not_share_connection_state",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "ports": [
+                    "list"
+                ]
+            }
+        },
+        "global": {},
+        "concurrency.manual_threading_works_okay": {
+            "name": "manual_threading_works_okay",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "queue": [
+                    "Queue"
+                ],
+                "_words": [
+                    "typing.Text"
+                ],
+                "data": [
+                    "list"
+                ],
+                "threads": [
+                    "list",
+                    "list[ExceptionHandlingThread]"
+                ],
+                "num_words": [
+                    "int"
+                ],
+                "chunksize": [
+                    "float"
+                ],
+                "start": [
+                    "float"
+                ],
+                "thread": [
+                    "ExceptionHandlingThread"
+                ],
+                "t": [
+                    "ExceptionHandlingThread"
+                ],
+                "err": [
+                    "str"
+                ]
+            }
+        },
+        "concurrency.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn1": [
+                    "Connection"
+                ],
+                "cxn2": [
+                    "Connection"
+                ],
+                "cxn3": [
+                    "Connection"
+                ],
+                "cxns": [
+                    "tuple[Connection]"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/integration/connection.py": {
+        "Connection_,ssh_connections.close_method_closes_connection": {
+            "name": "close_method_closes_connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,command_timeout.does_not_raise_exception_when_under_timeout": {
+            "name": "does_not_raise_exception_when_under_timeout",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "Connection_.large_remote_commands_finish_cleanly": {
+            "name": "large_remote_commands_finish_cleanly",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "path": [
+                    "typing.Text"
+                ],
+                "cxn": [
+                    "Connection"
+                ],
+                "fd": [
+                    "typing.IO"
+                ],
+                "words": [
+                    "list"
+                ],
+                "lines": [
+                    "list"
+                ]
+            }
+        },
+        "Connection_,sudo.mixed_sudo_and_normal_commands": {
+            "name": "mixed_sudo_and_normal_commands",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_.mixed_use_of_local_and_run": {
+            "name": "mixed_use_of_local_and_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ],
+                "result": [
+                    "local",
+                    "run"
+                ]
+            }
+        },
+        "Connection_,ssh_connections.open_method_generates_real_connection": {
+            "name": "open_method_generates_real_connection",
+            "location": -1,
+            "return": [
+                "Connection"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,command_timeout.raises_exception_when_over_timeout": {
+            "name": "raises_exception_when_over_timeout",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,command_timeout.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,sudo.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,run.simple_command_on_host": {
+            "name": "simple_command_on_host",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "result": [
+                    "run"
+                ]
+            }
+        },
+        "Connection_,run.simple_command_with_pty": {
+            "name": "simple_command_with_pty",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "result": [
+                    "run"
+                ]
+            }
+        },
+        "skip_outside_travis": {
+            "name": "skip_outside_travis",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,sudo.sudo_command": {
+            "name": "sudo_command",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,local.wraps_invoke_run": {
+            "name": "wraps_invoke_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ],
+                "result": [
+                    "local"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/integration/group.py": {
+        "Group_.excepted_command": {
+            "name": "excepted_command",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "e": [
+                    "Exception"
+                ]
+            }
+        },
+        "Group_.failed_command": {
+            "name": "failed_command",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "e": [
+                    "Exception"
+                ],
+                "exits": [
+                    "list"
+                ]
+            }
+        },
+        "global": {},
+        "Group_.simple_command": {
+            "name": "simple_command",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "outs": [
+                    "list"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/integration/transfer.py": {
+        "_support": {
+            "name": "_support",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "parts": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get.base_case": {
+            "name": "base_case",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "tmpdir": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put.base_case": {
+            "name": "base_case",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Transfer_,get.file_like_objects": {
+            "name": "file_like_objects",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "fd": [
+                    "BytesIO"
+                ]
+            }
+        },
+        "Transfer_,put.file_like_objects": {
+            "name": "file_like_objects",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "fd": [
+                    "BytesIO"
+                ],
+                "remote_str": [
+                    "str"
+                ]
+            }
+        },
+        "global": {},
+        "Transfer_,get.mode_preservation": {
+            "name": "mode_preservation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "tmpdir": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put.mode_preservation": {
+            "name": "mode_preservation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "tmpdir": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Transfer_,put.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/setup.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/sites/docs/conf.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/sites/shared_conf.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/sites/www/conf.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/tasks.py": {
+        "global": {},
+        "integration": {
+            "name": "integration",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "c": [],
+                "opts": [
+                    "None"
+                ],
+                "pty": [
+                    "bool"
+                ],
+                "x": [
+                    "bool"
+                ],
+                "k": [
+                    "None"
+                ],
+                "verbose": [
+                    "bool"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "capture": [
+                    "typing.Text"
+                ],
+                "module": [
+                    "None"
+                ]
+            },
+            "variables": {
+                "opts": [
+                    "None"
+                ],
+                "pty": [
+                    "bool"
+                ],
+                "x": [
+                    "bool"
+                ],
+                "k": [
+                    "None"
+                ],
+                "verbose": [
+                    "bool"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "capture": [
+                    "typing.Text"
+                ],
+                "module": [
+                    "None"
+                ]
+            }
+        },
+        "publish": {
+            "name": "publish",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": [],
+                "sdist": [
+                    "bool"
+                ],
+                "wheel": [
+                    "bool"
+                ],
+                "index": [
+                    "None"
+                ],
+                "sign": [
+                    "bool"
+                ],
+                "dry_run": [
+                    "bool"
+                ],
+                "directory": [
+                    "None"
+                ],
+                "check_desc": [
+                    "bool"
+                ]
+            },
+            "variables": {
+                "index": [
+                    "None"
+                ],
+                "sign": [
+                    "bool"
+                ],
+                "check_desc": [
+                    "bool"
+                ],
+                "dry_run": [
+                    "bool"
+                ],
+                "directory": [
+                    "None"
+                ],
+                "sdist": [
+                    "bool"
+                ],
+                "wheel": [
+                    "bool"
+                ]
+            }
+        },
+        "sanity_test_from_v1": {
+            "name": "sanity_test_from_v1",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {
+                "serious": [
+                    "typing.Text"
+                ],
+                "env_": [
+                    "typing.Text",
+                    "bool"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/tests/_support/fabfile.py": {
+        "basic_run": {
+            "name": "basic_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "build": {
+            "name": "build",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "deploy": {
+            "name": "deploy",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "expect_connect_timeout": {
+            "name": "expect_connect_timeout",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "expect_from_env": {
+            "name": "expect_from_env",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "expect_identities": {
+            "name": "expect_identities",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "expect_identity": {
+            "name": "expect_identity",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "expect_mutation": {
+            "name": "expect_mutation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "expect_mutation_to_fail": {
+            "name": "expect_mutation_to_fail",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {
+                "c_": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "expect_vanilla_Context": {
+            "name": "expect_vanilla_Context",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "first": {
+            "name": "first",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "global": {},
+        "hosts_are_host_stringlike": {
+            "name": "hosts_are_host_stringlike",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "hosts_are_init_kwargs": {
+            "name": "hosts_are_init_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "hosts_are_mixed_values": {
+            "name": "hosts_are_mixed_values",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "hosts_are_myhost": {
+            "name": "hosts_are_myhost",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "mutate": {
+            "name": "mutate",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {
+                "c_": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "second": {
+            "name": "second",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": [],
+                "show_host": [
+                    "bool"
+                ]
+            },
+            "variables": {
+                "show_host": [
+                    "bool"
+                ]
+            }
+        },
+        "third": {
+            "name": "third",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "two_hosts": {
+            "name": "two_hosts",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "vanilla_Task_works_ok": {
+            "name": "vanilla_Task_works_ok",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/_support/json_conf/fabfile.py": {
+        "expect_conf_value": {
+            "name": "expect_conf_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/tests/_support/prompting.py": {
+        "expect_connect_kwarg": {
+            "name": "expect_connect_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": [],
+                "key": [],
+                "val": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/tests/_support/py_conf/fabfile.py": {
+        "expect_conf_value": {
+            "name": "expect_conf_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/tests/_support/py_conf/fabric.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/tests/_support/runtime_fabfile.py": {
+        "dummy": {
+            "name": "dummy",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "global": {},
+        "runtime_ssh_config": {
+            "name": "runtime_ssh_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/_support/yaml_conf/fabfile.py": {
+        "expect_conf_value": {
+            "name": "expect_conf_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/tests/_support/yml_conf/fabfile.py": {
+        "expect_cli_key_filename": {
+            "name": "expect_cli_key_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {
+                "expected": [
+                    "list[typing.Text]"
+                ]
+            }
+        },
+        "expect_conf_key_filename": {
+            "name": "expect_conf_key_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {
+                "expected": [
+                    "list[typing.Text]"
+                ]
+            }
+        },
+        "expect_conf_value": {
+            "name": "expect_conf_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    },
+    "fabric-2.5.0/tests/_util.py": {
+        "Config.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "wat": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection.__init__": {
+            "name": "__init__",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {
+                "kwargs": [
+                    "Config"
+                ]
+            }
+        },
+        "expect": {
+            "name": "expect",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "invocation": [],
+                "out": [],
+                "program": [
+                    "None"
+                ],
+                "test": [
+                    "typing.Text"
+                ]
+            },
+            "variables": {
+                "program": [
+                    "None"
+                ],
+                "test": [
+                    "typing.Text"
+                ],
+                "err": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "faux_v1_env": {
+            "name": "faux_v1_env",
+            "location": -1,
+            "return": [
+                "Lexicon"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "load": {
+            "name": "load",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "name": []
+            },
+            "variables": {}
+        },
+        "support_path": {
+            "name": "support_path",
+            "location": -1,
+            "return": [
+                "typing.Generator"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/config.py": {
+        "Config_,from_v1._conf": {
+            "name": "_conf",
+            "location": -1,
+            "return": [
+                "from_v1"
+            ],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.always_use_pty": {
+            "name": "always_use_pty",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings,key_filename.base": {
+            "name": "base",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.both_paths_loaded_if_both_exist_with_user_winning": {
+            "name": "both_paths_loaded_if_both_exist_with_user_winning",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "expected": [
+                    "set[typing.Text]"
+                ]
+            }
+        },
+        "ssh_config_loading.config_obj_prevents_loading_runtime_path_too": {
+            "name": "config_obj_prevents_loading_runtime_path_too",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {
+                "sc": [
+                    "SSHConfig"
+                ]
+            }
+        },
+        "Config_,from_v1,additional_kwargs.connect_kwargs_also_merged_with_imported_values": {
+            "name": "connect_kwargs_also_merged_with_imported_values",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "conf": [
+                    "from_v1"
+                ]
+            }
+        },
+        "ssh_config_loading.default_file_paths_match_openssh": {
+            "name": "default_file_paths_match_openssh",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        },
+        "ssh_config_loading.defaults_to_empty_sshconfig_obj_if_no_files_found": {
+            "name": "defaults_to_empty_sshconfig_obj_if_no_files_found",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_.defaults_to_merger_of_global_defaults": {
+            "name": "defaults_to_merger_of_global_defaults",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading,core_ssh_load_option_allows_skipping_ssh_config_loading.does_not_affect_explicit_object": {
+            "name": "does_not_affect_explicit_object",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {
+                "sc": [
+                    "SSHConfig"
+                ]
+            }
+        },
+        "ssh_config_loading,core_ssh_load_option_allows_skipping_ssh_config_loading.does_not_skip_loading_runtime_path": {
+            "name": "does_not_skip_loading_runtime_path",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.forward_agent": {
+            "name": "forward_agent",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,additional_kwargs.forwards_arbitrary_kwargs_to_init": {
+            "name": "forwards_arbitrary_kwargs_to_init",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Config_,from_v1,var_mappings.gateway": {
+            "name": "gateway",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "Config_.has_various_Fabric_specific_default_keys": {
+            "name": "has_various_Fabric_specific_default_keys",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings,key_filename.is_not_set_if_None": {
+            "name": "is_not_set_if_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading,lazy_loading_and_explicit_methods.may_use_lazy_plus_explicit_methods_to_control_flow": {
+            "name": "may_use_lazy_plus_explicit_methods_to_control_flow",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        },
+        "Config_,from_v1.must_be_given_explicit_env_arg": {
+            "name": "must_be_given_explicit_env_arg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Config_,from_v1,var_mappings.no_agent": {
+            "name": "no_agent",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.object_can_be_given_explicitly_via_ssh_config_kwarg": {
+            "name": "object_can_be_given_explicitly_via_ssh_config_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "sc": [
+                    "SSHConfig"
+                ]
+            }
+        },
+        "Config_.our_global_defaults_can_override_invokes": {
+            "name": "our_global_defaults_can_override_invokes",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_.overrides_some_Invoke_defaults": {
+            "name": "overrides_some_Invoke_defaults",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.runtime_path_can_be_given_via_config_itself": {
+            "name": "runtime_path_can_be_given_via_config_itself",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        },
+        "ssh_config_loading.runtime_path_does_not_die_silently": {
+            "name": "runtime_path_does_not_die_silently",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "e": [
+                    "Exception"
+                ]
+            }
+        },
+        "ssh_config_loading.runtime_path_subject_to_user_expansion": {
+            "name": "runtime_path_subject_to_user_expansion",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {
+                "tilded": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Config_,from_v1,var_mappings,password.set_just_to_connect_kwargs_if_sudo_password_set": {
+            "name": "set_just_to_connect_kwargs_if_sudo_password_set",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings,password.set_to_both_password_fields_if_necessary": {
+            "name": "set_to_both_password_fields_if_necessary",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading,core_ssh_load_option_allows_skipping_ssh_config_loading.skips_default_paths": {
+            "name": "skips_default_paths",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.ssh_config_path": {
+            "name": "ssh_config_path",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "self_": [
+                    "typing.Text"
+                ],
+                "config": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Config_,from_v1,additional_kwargs.subservient_to_runtime_overrides": {
+            "name": "subservient_to_runtime_overrides",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "env_": [
+                    "typing.Text"
+                ],
+                "config": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Config_,from_v1,var_mappings.sudo_password": {
+            "name": "sudo_password",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.sudo_prompt": {
+            "name": "sudo_prompt",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.system_path_loads_ok": {
+            "name": "system_path_loads_ok",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.timeout": {
+            "name": "timeout",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.use_ssh_config": {
+            "name": "use_ssh_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.user_path_loads_ok": {
+            "name": "user_path_loads_ok",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.user_path_subject_to_user_expansion": {
+            "name": "user_path_subject_to_user_expansion",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {
+                "tilded": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Config_.uses_Fabric_prefix": {
+            "name": "uses_Fabric_prefix",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Config_,from_v1,var_mappings.warn_only": {
+            "name": "warn_only",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ssh_config_loading.when_config_obj_given_default_paths_are_not_sought": {
+            "name": "when_config_obj_given_default_paths_are_not_sought",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {
+                "sc": [
+                    "SSHConfig"
+                ]
+            }
+        },
+        "ssh_config_loading.when_runtime_path_given_other_paths_are_not_sought": {
+            "name": "when_runtime_path_given_other_paths_are_not_sought",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/conftest.py": {
+        "global": {}
+    },
+    "fabric-2.5.0/tests/connection.py": {
+        "Connection_,from_v1,var_mappings.None_host_string_errors_usefully": {
+            "name": "None_host_string_errors_usefully",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1._cxn": {
+            "name": "_cxn",
+            "location": -1,
+            "return": [
+                "from_v1"
+            ],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "Connection_,forward_local._forward_local": {
+            "name": "_forward_local",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "Client": [],
+                "mocket": [],
+                "select": []
+            },
+            "variables": {
+                "remote_port": [
+                    "get"
+                ],
+                "local_host": [
+                    "get"
+                ],
+                "remote_host": [
+                    "get"
+                ],
+                "tunnel_exception": [
+                    "None"
+                ],
+                "listener_sock": [
+                    "Mock"
+                ],
+                "tunnel_sock": [
+                    "Mock"
+                ],
+                "local_addr": [
+                    "Mock"
+                ],
+                "mocket_": [
+                    "Mock"
+                ],
+                "obj": [
+                    "Mock"
+                ]
+            }
+        },
+        "Connection_,forward_remote._forward_remote": {
+            "name": "_forward_remote",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "Client": [],
+                "select": [],
+                "mocket": []
+            },
+            "variables": {
+                "remote_host": [
+                    "get"
+                ],
+                "local_port": [
+                    "get"
+                ],
+                "local_host": [
+                    "get"
+                ],
+                "cxn": [
+                    "Connection"
+                ],
+                "chan": [
+                    "Mock"
+                ],
+                "chan_": [
+                    "typing.Text"
+                ],
+                "tup": [
+                    "tuple[get]"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config._runtime_config": {
+            "name": "_runtime_config",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "overrides": [
+                    "None"
+                ],
+                "basename": [
+                    "typing.Text"
+                ]
+            },
+            "variables": {
+                "basename": [
+                    "typing.Text"
+                ],
+                "confname": [
+                    "str"
+                ],
+                "overrides": [
+                    "None",
+                    "dict"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config._runtime_cxn": {
+            "name": "_runtime_cxn",
+            "location": -1,
+            "return": [
+                "Connection"
+            ],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "_select_result": {
+            "name": "_select_result",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "obj": []
+            },
+            "variables": {
+                "initial": [
+                    "list[tuple]"
+                ]
+            }
+        },
+        "Connection_,forward_local._thread_error": {
+            "name": "_thread_error",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "which": []
+            },
+            "variables": {
+                "e": [
+                    "Exception"
+                ],
+                "err": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection_,init,user.accepts_config_user_option": {
+            "name": "accepts_config_user_option",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ]
+            }
+        },
+        "Connection_,init,port.accepts_configuration_port": {
+            "name": "accepts_configuration_port",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ]
+            }
+        },
+        "Connection_,init,connect_timeout.accepts_configuration_value": {
+            "name": "accepts_configuration_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ]
+            }
+        },
+        "Connection_,init,forward_agent.accepts_configuration_value": {
+            "name": "accepts_configuration_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ]
+            }
+        },
+        "Connection_,init,gateway.accepts_configuration_value": {
+            "name": "accepts_configuration_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "gw": [
+                    "Connection"
+                ],
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,create_session.activates_paramiko_agent_forwarding_if_configured": {
+            "name": "activates_paramiko_agent_forwarding_if_configured",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Handler": [],
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "chan": [
+                    "create_session"
+                ]
+            }
+        },
+        "Connection_,from_v1,var_mappings,port.basic": {
+            "name": "basic",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,sudo.basic_invocation": {
+            "name": "basic_invocation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Remote": [],
+                "client": []
+            },
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ],
+                "cmd": [
+                    "str"
+                ],
+                "expected": [
+                    "list[run]"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,identity_file.basic_loading_of_value": {
+            "name": "basic_loading_of_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,run.calls_Remote_run_with_command_and_kwargs_and_returns_its_result": {
+            "name": "calls_Remote_run_with_command_and_kwargs_and_returns_its_result",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Remote": [],
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "r1": [
+                    "run"
+                ],
+                "r2": [
+                    "run"
+                ],
+                "r": [
+                    "run"
+                ]
+            }
+        },
+        "Connection_,close.calls_SSHClient_close": {
+            "name": "calls_SSHClient_close",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,open.calls_SSHClient_connect": {
+            "name": "calls_SSHClient_connect",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,get.calls_Transfer_get": {
+            "name": "calls_Transfer_get",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Transfer": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,put.calls_Transfer_put": {
+            "name": "calls_Transfer_put",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Transfer": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,close.calls_agent_handler_close_if_enabled": {
+            "name": "calls_agent_handler_close_if_enabled",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Handler": [],
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,local.calls_invoke_Local_run": {
+            "name": "calls_invoke_Local_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Local": []
+            },
+            "variables": {}
+        },
+        "Connection_,create_session.calls_open_for_you": {
+            "name": "calls_open_for_you",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "c_": [
+                    "Mock"
+                ]
+            }
+        },
+        "Connection_,run.calls_open_for_you": {
+            "name": "calls_open_for_you",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Remote": [],
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "c_": [
+                    "Mock"
+                ]
+            }
+        },
+        "Connection_,sudo.calls_open_for_you": {
+            "name": "calls_open_for_you",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Remote": [],
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "c_": [
+                    "Mock"
+                ]
+            }
+        },
+        "Connection_,init,config.can_be_specified": {
+            "name": "can_be_specified",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Config"
+                ]
+            }
+        },
+        "Connection_,from_v1,var_mappings,port.casted_to_int": {
+            "name": "casted_to_int",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,close.class_works_as_a_closing_contextmanager": {
+            "name": "class_works_as_a_closing_contextmanager",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,basic_attributes.client_defaults_to_a_new_SSHClient": {
+            "name": "client_defaults_to_a_new_SSHClient",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,comparison_and_hashing.comparison_to_non_Connections_is_False": {
+            "name": "comparison_to_non_Connections_is_False",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,comparison_and_hashing.comparison_uses_host_user_and_port": {
+            "name": "comparison_uses_host_user_and_port",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c1": [
+                    "Connection"
+                ],
+                "c2": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,from_v1,additional_kwargs.conflicting_kwargs_win_over_v1_env_values": {
+            "name": "conflicting_kwargs_win_over_v1_env_values",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "env": [
+                    "Lexicon"
+                ],
+                "cxn": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Connection_,open.connect_kwargs_protection_not_tripped_by_defaults": {
+            "name": "connect_kwargs_protection_not_tripped_by_defaults",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,port.defaults_to_22_because_yup": {
+            "name": "defaults_to_22_because_yup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,forward_agent.defaults_to_False": {
+            "name": "defaults_to_False",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,connect_timeout.defaults_to_None": {
+            "name": "defaults_to_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,known_hosts_behavior.defaults_to_auto_add": {
+            "name": "defaults_to_auto_add",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1,obtaining_config.defaults_to_calling_Config_from_v1": {
+            "name": "defaults_to_calling_Config_from_v1",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Config_from_v1": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,inline_ssh_env.defaults_to_config_value": {
+            "name": "defaults_to_config_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ]
+            }
+        },
+        "Connection_,init,connect_kwargs.defaults_to_empty_dict": {
+            "name": "defaults_to_empty_dict",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,user.defaults_to_local_user_with_no_config": {
+            "name": "defaults_to_local_user_with_no_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,string_representation.displays_core_params": {
+            "name": "displays_core_params",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "template": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection_,forward_remote.distinct_local_port": {
+            "name": "distinct_local_port",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_local.distinct_remote_port": {
+            "name": "distinct_remote_port",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config.effectively_blank_when_no_loaded_config": {
+            "name": "effectively_blank_when_no_loaded_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,port.errors_when_given_as_both_kwarg_and_shorthand": {
+            "name": "errors_when_given_as_both_kwarg_and_shorthand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,user.errors_when_given_as_both_kwarg_and_shorthand": {
+            "name": "errors_when_given_as_both_kwarg_and_shorthand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_command.explicit_False_turns_off_feature": {
+            "name": "explicit_False_turns_off_feature",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,proxy_jump.explicit_False_turns_off_feature": {
+            "name": "explicit_False_turns_off_feature",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,from_v1,additional_kwargs.forwards_arbitrary_kwargs_to_init": {
+            "name": "forwards_arbitrary_kwargs_to_init",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Connection_,forward_local.forwards_local_port_to_remote_end": {
+            "name": "forwards_local_port_to_remote_end",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_remote.forwards_remote_port_to_local_end": {
+            "name": "forwards_remote_port_to_local_end",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_jump.gateway_Connections_get_parent_connection_configs": {
+            "name": "gateway_Connections_get_parent_connection_configs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "global": {},
+        "Connection_,close.has_no_required_args_and_returns_None": {
+            "name": "has_no_required_args_and_returns_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,open.has_no_required_args_and_returns_None": {
+            "name": "has_no_required_args_and_returns_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,comparison_and_hashing.hashing_works": {
+            "name": "hashing_works",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1,var_mappings.host_string": {
+            "name": "host_string",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,hostname.hostname_directive_overrides_host_attr": {
+            "name": "hostname_directive_overrides_host_attr",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,config.if_given_an_invoke_Config_we_upgrade_to_our_own_Config": {
+            "name": "if_given_an_invoke_Config_we_upgrade_to_our_own_Config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,initializes_client.instantiates_empty_SSHClient": {
+            "name": "instantiates_empty_SSHClient",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Client": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,host.ipv6_addresses_work_ok_but_avoid_port_shorthand": {
+            "name": "ipv6_addresses_work_ok_but_avoid_port_shorthand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "addr": [
+                    "typing.Text"
+                ],
+                "c": [
+                    "Connection"
+                ],
+                "c2": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,open.is_connected_True_when_successful": {
+            "name": "is_connected_True_when_successful",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,basic_attributes.is_connected_defaults_to_False": {
+            "name": "is_connected_defaults_to_False",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,open.is_connected_still_False_when_connect_fails": {
+            "name": "is_connected_still_False_when_connect_fails",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,host.is_exposed_as_attribute": {
+            "name": "is_exposed_as_attribute",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,initializes_client.is_made_available_as_client_attr": {
+            "name": "is_made_available_as_client_attr",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,config.is_not_required": {
+            "name": "is_not_required",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,gateway.is_optional_and_defaults_to_None": {
+            "name": "is_optional_and_defaults_to_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,host.is_required": {
+            "name": "is_required",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,connect_kwargs.kwarg_wins_over_config": {
+            "name": "kwarg_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,connect_timeout.kwarg_wins_over_config": {
+            "name": "kwarg_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,forward_agent.kwarg_wins_over_config": {
+            "name": "kwarg_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,port.kwarg_wins_over_config": {
+            "name": "kwarg_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,user.kwarg_wins_over_config": {
+            "name": "kwarg_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,sftp.lazily_caches_result": {
+            "name": "lazily_caches_result",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "client_": [
+                    "list"
+                ],
+                "cxn": [
+                    "Connection"
+                ],
+                "first": [
+                    "sftp"
+                ],
+                "err": [
+                    "typing.Text"
+                ],
+                "second": [
+                    "sftp"
+                ]
+            }
+        },
+        "Connection_,forward_remote.listener_errors_bubble_up": {
+            "name": "listener_errors_bubble_up",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,connect_timeout.loses_to_explicit": {
+            "name": "loses_to_explicit",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,forward_agent.loses_to_explicit": {
+            "name": "loses_to_explicit",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,port.loses_to_explicit": {
+            "name": "loses_to_explicit",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,proxy_command.loses_to_explicit": {
+            "name": "loses_to_explicit",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,proxy_jump.loses_to_explicit": {
+            "name": "loses_to_explicit",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,user.loses_to_explicit": {
+            "name": "loses_to_explicit",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,connect_kwargs.may_be_configured": {
+            "name": "may_be_configured",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,inline_ssh_env.may_be_given": {
+            "name": "may_be_given",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,connect_timeout.may_be_given_as_kwarg": {
+            "name": "may_be_given_as_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,forward_agent.may_be_given_as_kwarg": {
+            "name": "may_be_given_as_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,port.may_be_given_as_kwarg": {
+            "name": "may_be_given_as_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,user.may_be_given_as_kwarg": {
+            "name": "may_be_given_as_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1,obtaining_config.may_be_given_config_explicitly": {
+            "name": "may_be_given_config_explicitly",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Config_from_v1": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,connect_kwargs.may_be_given_explicitly": {
+            "name": "may_be_given_explicitly",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,host.may_contain_port_shorthand": {
+            "name": "may_contain_port_shorthand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,host.may_contain_user_and_port_shorthand": {
+            "name": "may_contain_user_and_port_shorthand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,host.may_contain_user_shorthand": {
+            "name": "may_contain_user_shorthand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,connect_kwargs_key_filename.merges_sources": {
+            "name": "merges_sources",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": [],
+                "ssh": [],
+                "invoke": [],
+                "kwarg": [],
+                "expected": []
+            },
+            "variables": {
+                "config_kwargs": [
+                    "dict",
+                    "dict[typing.Text, ]",
+                    "dict[typing.Text, dict[typing.Text, dict[typing.Text, list[typing.Text]]]]"
+                ],
+                "connect_kwargs": [
+                    "dict",
+                    "dict[typing.Text, list[typing.Text]]"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,proxy_jump.multi_hop_works_ok": {
+            "name": "multi_hop_works_ok",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_jump.multihop_plus_wildcards_still_no_recursion": {
+            "name": "multihop_plus_wildcards_still_no_recursion",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,forward_local.multiple_tunnels_can_be_open_at_once": {
+            "name": "multiple_tunnels_can_be_open_at_once",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_remote.multiple_tunnels_can_be_open_at_once": {
+            "name": "multiple_tunnels_can_be_open_at_once",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1.must_be_given_explicit_env_arg": {
+            "name": "must_be_given_explicit_env_arg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "from_v1"
+                ]
+            }
+        },
+        "Connection_,forward_remote.non_localhost_connections": {
+            "name": "non_localhost_connections",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_local.non_localhost_listener": {
+            "name": "non_localhost_listener",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_local.non_remote_localhost_connection": {
+            "name": "non_remote_localhost_connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1,var_mappings,port.not_supplied_if_given_in_host_string": {
+            "name": "not_supplied_if_given_in_host_string",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,string_representation.omits_default_param_values": {
+            "name": "omits_default_param_values",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,hostname.original_host_always_set": {
+            "name": "original_host_always_set",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,string_representation.param_comparison_uses_config": {
+            "name": "param_comparison_uses_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "conf": [
+                    "Config"
+                ],
+                "c": [
+                    "Connection"
+                ],
+                "template": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection_,run.passes_inline_env_to_Remote": {
+            "name": "passes_inline_env_to_Remote",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Remote": [],
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,sudo.passes_inline_env_to_Remote": {
+            "name": "passes_inline_env_to_Remote",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Remote": [],
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,open.passes_through_connect_kwargs": {
+            "name": "passes_through_connect_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,sudo.per_host_password_works_as_expected": {
+            "name": "per_host_password_works_as_expected",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,string_representation.proxycommand_gateway_shows_type": {
+            "name": "proxycommand_gateway_shows_type",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "template": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection_,string_representation.proxyjump_gateway_shows_type": {
+            "name": "proxyjump_gateway_shows_type",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ],
+                "template": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection_,open.refuses_to_overwrite_connect_kwargs_with_others": {
+            "name": "refuses_to_overwrite_connect_kwargs_with_others",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "key": [
+                    "typing.Text",
+                    "int",
+                    "dict[typing.Text, int]"
+                ],
+                "value": [
+                    "typing.Text",
+                    "int",
+                    "dict[typing.Text, int]"
+                ],
+                "kwargs": [
+                    "typing.Text",
+                    "int",
+                    "dict[typing.Text, int]"
+                ],
+                "e": [
+                    "Exception"
+                ],
+                "err": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Connection_,forward_remote.remote_non_localhost_listener": {
+            "name": "remote_non_localhost_listener",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,sftp.returns_result_of_client_open_sftp": {
+            "name": "returns_result_of_client_open_sftp",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,initializes_client.sets_missing_host_key_policy": {
+            "name": "sets_missing_host_key_policy",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Policy": [],
+                "client": []
+            },
+            "variables": {
+                "sentinel": [
+                    "Mock"
+                ],
+                "Policy_": [
+                    "Mock"
+                ]
+            }
+        },
+        "Connection_,from_v1.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_jump.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "_expected_gw": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,open.short_circuits_if_already_connected": {
+            "name": "short_circuits_if_already_connected",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,close.short_circuits_if_not_connected": {
+            "name": "short_circuits_if_not_connected",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,port.shorthand_wins_over_config": {
+            "name": "shorthand_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,user.shorthand_wins_over_config": {
+            "name": "shorthand_wins_over_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "config": [
+                    "Config"
+                ],
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config.shows_result_of_lookup_when_loaded_config": {
+            "name": "shows_result_of_lookup_when_loaded_config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "expected": [
+                    "dict[typing.Text, typing.Union[typing.Text,list[typing.Text]]]"
+                ]
+            }
+        },
+        "Connection_,comparison_and_hashing.sorting_works": {
+            "name": "sorting_works",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,string_representation.str_displays_repr": {
+            "name": "str_displays_repr",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,open.submits_connect_timeout": {
+            "name": "submits_connect_timeout",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,init,gateway.takes_a_Connection": {
+            "name": "takes_a_Connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,gateway.takes_a_string": {
+            "name": "takes_a_string",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "c": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,forward_local.tunnel_errors_bubble_up": {
+            "name": "tunnel_errors_bubble_up",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_remote.tunnel_errors_bubble_up": {
+            "name": "tunnel_errors_bubble_up",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,forward_local.tunnel_manager_errors_bubble_up": {
+            "name": "tunnel_manager_errors_bubble_up",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,from_v1,var_mappings.user": {
+            "name": "user",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,open.uses_configured_user_host_and_port": {
+            "name": "uses_configured_user_host_and_port",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "client": []
+            },
+            "variables": {}
+        },
+        "Connection_,open.uses_gateway_channel_as_sock_for_SSHClient_connect": {
+            "name": "uses_gateway_channel_as_sock_for_SSHClient_connect",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Client": []
+            },
+            "variables": {
+                "mock_gw": [
+                    "Mock"
+                ],
+                "mock_main": [
+                    "Mock"
+                ],
+                "Client_": [
+                    "list[Mock]"
+                ],
+                "gw": [
+                    "Connection"
+                ],
+                "gw_": [
+                    "Mock"
+                ],
+                "main": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,open.uses_proxycommand_as_sock_for_Client_connect": {
+            "name": "uses_proxycommand_as_sock_for_Client_connect",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "moxy": [],
+                "client": []
+            },
+            "variables": {
+                "main": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,proxy_jump.wildcards_do_not_trigger_recursion": {
+            "name": "wildcards_do_not_trigger_recursion",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Connection_,init,ssh_config,connect_timeout.wins_over_configuration": {
+            "name": "wins_over_configuration",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,forward_agent.wins_over_configuration": {
+            "name": "wins_over_configuration",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,port.wins_over_configuration": {
+            "name": "wins_over_configuration",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_command.wins_over_configuration": {
+            "name": "wins_over_configuration",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_jump.wins_over_configuration": {
+            "name": "wins_over_configuration",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,user.wins_over_configuration": {
+            "name": "wins_over_configuration",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,connect_timeout.wins_over_default": {
+            "name": "wins_over_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,forward_agent.wins_over_default": {
+            "name": "wins_over_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,port.wins_over_default": {
+            "name": "wins_over_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_command.wins_over_default": {
+            "name": "wins_over_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_jump.wins_over_default": {
+            "name": "wins_over_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,user.wins_over_default": {
+            "name": "wins_over_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Connection_,init,ssh_config,proxy_jump.wins_over_proxycommand": {
+            "name": "wins_over_proxycommand",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/executor.py": {
+        "_execute": {
+            "name": "_execute",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "_get_executor": {
+            "name": "_get_executor",
+            "location": -1,
+            "return": [
+                "tuple[typing.Union[Mock,Executor]]"
+            ],
+            "arguments": {
+                "hosts_flag": [
+                    "None"
+                ],
+                "hosts_kwarg": [
+                    "None"
+                ],
+                "post": [
+                    "None"
+                ],
+                "remainder": [
+                    "typing.Text"
+                ]
+            },
+            "variables": {
+                "post_tasks": [
+                    "list"
+                ],
+                "post": [
+                    "None"
+                ],
+                "hosts": [
+                    "Argument"
+                ],
+                "hosts_flag": [
+                    "None"
+                ],
+                "core_args": [
+                    "ParseResult"
+                ],
+                "remainder": [
+                    "typing.Text"
+                ],
+                "core_args_": [
+                    "typing.Text"
+                ],
+                "body": [
+                    "Mock"
+                ],
+                "hosts_kwarg": [
+                    "None"
+                ],
+                "task": [
+                    "Task"
+                ],
+                "coll": [
+                    "Collection"
+                ]
+            }
+        },
+        "Executor_,expand_calls,parameterize.always_generates_ConnectionCall_with_host_attr": {
+            "name": "always_generates_ConnectionCall_with_host_attr",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "calls": [
+                    "expand_calls"
+                ]
+            }
+        },
+        "Executor_,expand_calls,remainder.creates_anonymous_call_per_host": {
+            "name": "creates_anonymous_call_per_host",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Executor_,expand_calls,dedupe.deduplication_not_performed": {
+            "name": "deduplication_not_performed",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Executor_,expand_calls,Invoke_task_objects_without_hosts_attribute_still_work.execution_happens_normally_without_parameterization": {
+            "name": "execution_happens_normally_without_parameterization",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "body": [
+                    "Mock"
+                ],
+                "coll": [
+                    "Collection"
+                ],
+                "hosts": [
+                    "Argument"
+                ],
+                "core_args": [
+                    "ParseResult"
+                ]
+            }
+        },
+        "Executor_,expand_calls,hosts_flag_vs_attributes.flag_wins": {
+            "name": "flag_wins",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "Executor_,expand_calls,Invoke_task_objects_without_hosts_attribute_still_work.hosts_flag_still_triggers_parameterization": {
+            "name": "hosts_flag_still_triggers_parameterization",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "body": [
+                    "Mock"
+                ],
+                "coll": [
+                    "Collection"
+                ],
+                "hosts": [
+                    "Argument"
+                ],
+                "hosts_": [
+                    "typing.Text"
+                ],
+                "core_args": [
+                    "ParseResult"
+                ]
+            }
+        },
+        "Executor_,expand_calls,hosts_attribute_on_task_objects.may_give_Connection_kwargs_as_values": {
+            "name": "may_give_Connection_kwargs_as_values",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "expected": [
+                    "list[Connection]"
+                ]
+            }
+        },
+        "Executor_,expand_calls,hosts_flag_empty.no_parameterization_is_done": {
+            "name": "no_parameterization_is_done",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Executor_,expand_calls,hosts_attribute_on_task_objects.parameterization_per_host": {
+            "name": "parameterization_per_host",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Executor_,expand_calls,hosts_flag_set.parameterization_per_host": {
+            "name": "parameterization_per_host",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Executor_,expand_calls,hosts_attribute_on_task_objects.post_tasks_happen_once_only": {
+            "name": "post_tasks_happen_once_only",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "post": [
+                    "Mock"
+                ]
+            }
+        },
+        "Executor_,expand_calls,hosts_flag_set.post_tasks_happen_once_only": {
+            "name": "post_tasks_happen_once_only",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "post": [
+                    "Mock"
+                ]
+            }
+        },
+        "Executor_,expand_calls,remainder.raises_NothingToDo_when_no_hosts": {
+            "name": "raises_NothingToDo_when_no_hosts",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/group.py": {
+        "_make_serial_tester": {
+            "name": "_make_serial_tester",
+            "location": -1,
+            "return": [],
+            "arguments": {
+                "cxns": [],
+                "index": [],
+                "args": [],
+                "kwargs": []
+            },
+            "variables": {}
+        },
+        "Group_.acts_like_an_iterable_of_Connections": {
+            "name": "acts_like_an_iterable_of_Connections",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "g": [
+                    "Group"
+                ]
+            }
+        },
+        "ThreadingGroup_,run.bubbles_up_errors_within_threads": {
+            "name": "bubbles_up_errors_within_threads",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "onoz": [
+                    "OhNoz"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "e": [
+                    "Exception"
+                ],
+                "succeeded": [
+                    "dict[Mock, ]"
+                ],
+                "failed": [
+                    "dict[Mock, OhNoz]"
+                ],
+                "expected": [
+                    "dict[Mock, ]",
+                    "dict[Mock, OhNoz]"
+                ]
+            }
+        },
+        "Group_,close_and_contextmanager_behavior.close_closes_all_member_connections": {
+            "name": "close_closes_all_member_connections",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "c": [
+                    "Mock"
+                ]
+            }
+        },
+        "Group_,close_and_contextmanager_behavior.contextmanager_behavior_works_like_Connection": {
+            "name": "contextmanager_behavior_works_like_Connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "my_g": [
+                    "from_connections"
+                ],
+                "c": [
+                    "Mock"
+                ]
+            }
+        },
+        "SerialGroup_,run.errors_in_execution_capture_and_continue_til_end": {
+            "name": "errors_in_execution_capture_and_continue_til_end",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "onoz": [
+                    "OhNoz"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "e": [
+                    "Exception"
+                ],
+                "succeeded": [
+                    "dict[Mock, ]"
+                ],
+                "failed": [
+                    "dict[Mock, OhNoz]"
+                ],
+                "expected": [
+                    "dict[Mock, ]",
+                    "dict[Mock, OhNoz]"
+                ]
+            }
+        },
+        "SerialGroup_,run.executes_arguments_on_contents_run_serially": {
+            "name": "executes_arguments_on_contents_run_serially",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text"
+                ],
+                "cxns": [
+                    "list[Connection]"
+                ],
+                "args": [
+                    "tuple[typing.Text]"
+                ],
+                "kwargs": [
+                    "dict[typing.Text, bool]"
+                ],
+                "index": [
+                    "int",
+                    "Connection"
+                ],
+                "cxn": [
+                    "int",
+                    "Connection"
+                ],
+                "cxn_": [
+                    "Mock"
+                ],
+                "g": [
+                    "from_connections"
+                ]
+            }
+        },
+        "ThreadingGroup_,run.executes_arguments_on_contents_run_via_threading": {
+            "name": "executes_arguments_on_contents_run_via_threading",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Thread": [],
+                "Queue": []
+            },
+            "variables": {
+                "g": [
+                    "from_connections"
+                ],
+                "Thread_": [
+                    "None"
+                ],
+                "instantiations": [
+                    "list"
+                ],
+                "expected": [
+                    "int"
+                ],
+                "name": [
+                    "typing.Text"
+                ],
+                "got": [
+                    "typing.Text"
+                ],
+                "err": [
+                    "typing.Text",
+                    "str"
+                ]
+            }
+        },
+        "global": {},
+        "Group_,from_connections.inits_from_iterable_of_Connections": {
+            "name": "inits_from_iterable_of_Connections",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "g": [
+                    "from_connections"
+                ]
+            }
+        },
+        "Group_,init.may_be_empty": {
+            "name": "may_be_empty",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Group_,run.not_implemented_in_base_class": {
+            "name": "not_implemented_in_base_class",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ThreadingGroup_,run.queue_used_to_return_results": {
+            "name": "queue_used_to_return_results",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "Queue": []
+            },
+            "variables": {
+                "x": [
+                    "typing.Text",
+                    "Mock",
+                    "tuple[Mock]"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "queue_": [
+                    "tuple[bool]",
+                    "tuple[Mock]"
+                ],
+                "fakes": [
+                    "list[tuple[Mock]]"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "results": [
+                    "run"
+                ],
+                "expected": [
+                    "dict[Mock, ]"
+                ],
+                "puts": [
+                    "list"
+                ],
+                "_": [
+                    "Mock"
+                ],
+                "gets": [
+                    "list"
+                ]
+            }
+        },
+        "SerialGroup_,run.returns_results_mapping": {
+            "name": "returns_results_mapping",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text",
+                    "Mock"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "result": [
+                    "run"
+                ],
+                "expected": [
+                    "dict[Mock, ]"
+                ]
+            }
+        },
+        "ThreadingGroup_,run.returns_results_mapping": {
+            "name": "returns_results_mapping",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text",
+                    "Mock"
+                ],
+                "cxns": [
+                    "list[Mock]"
+                ],
+                "g": [
+                    "from_connections"
+                ],
+                "result": [
+                    "run"
+                ],
+                "expected": [
+                    "dict[Mock, ]"
+                ]
+            }
+        },
+        "ThreadingGroup_.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "x": [
+                    "typing.Text"
+                ],
+                "cxns": [
+                    "list[Connection]"
+                ],
+                "args": [
+                    "tuple[typing.Text]"
+                ],
+                "kwargs": [
+                    "dict[typing.Text, bool]"
+                ]
+            }
+        },
+        "Group_,init.takes_splat_arg_of_host_strings": {
+            "name": "takes_splat_arg_of_host_strings",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "g": [
+                    "Group"
+                ]
+            }
+        },
+        "Group_,init.takes_splat_kwargs_and_passes_them_to_Connections": {
+            "name": "takes_splat_kwargs_and_passes_them_to_Connections",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "g": [
+                    "Group"
+                ]
+            }
+        },
+        "tester": {
+            "name": "tester",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "k": [],
+                "a": []
+            },
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/init.py": {
+        "init.Config": {
+            "name": "Config",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.Connection": {
+            "name": "Connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.Executor": {
+            "name": "Executor",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.Group": {
+            "name": "Group",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.GroupResult": {
+            "name": "GroupResult",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.Remote": {
+            "name": "Remote",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.Result": {
+            "name": "Result",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.SerialGroup": {
+            "name": "SerialGroup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.Task": {
+            "name": "Task",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.ThreadingGroup": {
+            "name": "ThreadingGroup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "init.task": {
+            "name": "task",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "init.version_and_version_info": {
+            "name": "version_and_version_info",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "name": [
+                    "typing.Text"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/tests/main.py": {
+        "Fab_,runtime_ssh_config_path.IOErrors_if_given_missing_file": {
+            "name": "IOErrors_if_given_missing_file",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,secrets_prompts._expect_prompt": {
+            "name": "_expect_prompt",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "getpass": [],
+                "flag": [],
+                "key": [],
+                "value": [],
+                "prompt": []
+            },
+            "variables": {
+                "cmd": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Fab_,runtime_ssh_config_path._run": {
+            "name": "_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "flag": [
+                    "typing.Text"
+                ],
+                "file_": [
+                    "typing.Text"
+                ],
+                "tasks": [
+                    "typing.Text"
+                ]
+            },
+            "variables": {
+                "cmd": [
+                    "typing.Text"
+                ],
+                "flag": [
+                    "typing.Text"
+                ],
+                "file_": [
+                    "typing.Text"
+                ],
+                "tasks": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Fab_,core_program_behavior.basic_pre_and_post_tasks_still_work": {
+            "name": "basic_pre_and_post_tasks_still_work",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,no_hosts_flag_or_task_arg.calls_task_once_with_invoke_context": {
+            "name": "calls_task_once_with_invoke_context",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,runtime_ssh_config_path.capital_F_flag_specifies_runtime_ssh_config_file": {
+            "name": "capital_F_flag_specifies_runtime_ssh_config_file",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,configuration_updating_and_merging.cli_identity_still_overrides_when_non_empty": {
+            "name": "cli_identity_still_overrides_when_non_empty",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,hosts_flag_parameterizes_tasks.comma_separated_string_is_multiple_hosts": {
+            "name": "comma_separated_string_is_multiple_hosts",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,completion.complete_flag_does_not_trigger_remainder_only_behavior": {
+            "name": "complete_flag_does_not_trigger_remainder_only_behavior",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "name": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Fab_,hosts_flag_parameterizes_tasks.config_mutation_not_preserved": {
+            "name": "config_mutation_not_preserved",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,runtime_ssh_config_path.config_only_loaded_once_per_session": {
+            "name": "config_only_loaded_once_per_session",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "method": []
+            },
+            "variables": {}
+        },
+        "Fab_,runtime_identity_file.dash_i_supplies_default_connect_kwarg_key_filename": {
+            "name": "dash_i_supplies_default_connect_kwarg_key_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,connect_timeout.dash_t_supplies_default_connect_timeout": {
+            "name": "dash_t_supplies_default_connect_timeout",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,connect_timeout.double_dash_connect_timeout_also_works": {
+            "name": "double_dash_connect_timeout_also_works",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,runtime_identity_file.double_dash_identity_also_works": {
+            "name": "double_dash_identity_also_works",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,core_program_behavior.executes_remainder_as_anonymous_task": {
+            "name": "executes_remainder_as_anonymous_task",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,core_program_behavior.exposes_hosts_flag_in_help": {
+            "name": "exposes_hosts_flag_in_help",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,no_hosts_flag_or_task_arg.generates_exception_if_combined_with_remainder": {
+            "name": "generates_exception_if_combined_with_remainder",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "global": {},
+        "Fab_,core_program_behavior.help_output_says_fab": {
+            "name": "help_output_says_fab",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,hosts_flag_parameterizes_tasks.host_string_shorthand_is_passed_through": {
+            "name": "host_string_shorthand_is_passed_through",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,hosts_task_arg_parameterizes_tasks.host_string_shorthand_works_ok": {
+            "name": "host_string_shorthand_works_ok",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,no_hosts_flag_or_task_arg.invokelike_multitask_invocation_preserves_config_mutation": {
+            "name": "invokelike_multitask_invocation_preserves_config_mutation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,configuration_updating_and_merging.key_filename_can_be_set_via_non_override_config_levels": {
+            "name": "key_filename_can_be_set_via_non_override_config_levels",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,filenames.loads_fabfile_not_tasks": {
+            "name": "loads_fabfile_not_tasks",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,filenames.loads_fabric_config_files_not_invoke_ones": {
+            "name": "loads_fabric_config_files_not_invoke_ones",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "type_": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Fab_,runtime_ssh_config_path.long_form_flag_also_works": {
+            "name": "long_form_flag_also_works",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,runtime_identity_file.may_be_given_multiple_times": {
+            "name": "may_be_given_multiple_times",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,hosts_task_arg_parameterizes_tasks.may_give_Connection_init_kwarg_dicts": {
+            "name": "may_give_Connection_init_kwarg_dicts",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,hosts_task_arg_parameterizes_tasks.may_give_mixed_value_types": {
+            "name": "may_give_mixed_value_types",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,hosts_flag_parameterizes_tasks.multiple_hosts_works_with_remainder_too": {
+            "name": "multiple_hosts_works_with_remainder_too",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,hosts_task_arg_parameterizes_tasks.multiple_strings_is_multiple_host_args": {
+            "name": "multiple_strings_is_multiple_host_args",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,secrets_prompts.passphrase_prompt_updates_connect_kwargs": {
+            "name": "passphrase_prompt_updates_connect_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,secrets_prompts.password_prompt_updates_connect_kwargs": {
+            "name": "password_prompt_updates_connect_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,hosts_flag_parameterizes_tasks.pre_post_tasks_are_not_parameterized_across_hosts": {
+            "name": "pre_post_tasks_are_not_parameterized_across_hosts",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "expected": [
+                    "str"
+                ]
+            }
+        },
+        "main.python_dash_m_acts_like_fab": {
+            "name": "python_dash_m_acts_like_fab",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "capsys": []
+            },
+            "variables": {
+                "expected_output": [
+                    "str"
+                ]
+            }
+        },
+        "Fab_,hosts_task_arg_parameterizes_tasks.single_string_is_single_exec": {
+            "name": "single_string_is_single_exec",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,hosts_flag_parameterizes_tasks.single_string_is_single_host_and_single_exec": {
+            "name": "single_string_is_single_host_and_single_exec",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {}
+        },
+        "Fab_,core_program_behavior.uses_FABRIC_env_prefix": {
+            "name": "uses_FABRIC_env_prefix",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "environ": []
+            },
+            "variables": {}
+        },
+        "Fab_,no_hosts_flag_or_task_arg.vanilla_Invoke_task_works_too": {
+            "name": "vanilla_Invoke_task_works_too",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Fab_,core_program_behavior.version_output_contains_our_name_plus_deps": {
+            "name": "version_output_contains_our_name_plus_deps",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/runners.py": {
+        "_Connection": {
+            "name": "_Connection",
+            "location": -1,
+            "return": [
+                "Connection"
+            ],
+            "arguments": {
+                "kwargs": [],
+                "args": []
+            },
+            "variables": {}
+        },
+        "_runner": {
+            "name": "_runner",
+            "location": -1,
+            "return": [
+                "Remote"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote_,run.calls_expected_paramiko_bits": {
+            "name": "calls_expected_paramiko_bits",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Remote_,run.channel_close_skipped_when_channel_not_even_made": {
+            "name": "channel_close_skipped_when_channel_not_even_made",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Remote_,run.channel_is_closed_normally": {
+            "name": "channel_is_closed_normally",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Remote_,run.channel_is_closed_on_body_exceptions": {
+            "name": "channel_is_closed_on_body_exceptions",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "r": [
+                    "_OopsRemote"
+                ],
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "global": {},
+        "Remote_.kill_closes_the_channel": {
+            "name": "kill_closes_the_channel",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "runner_": [
+                    "Mock"
+                ]
+            }
+        },
+        "Remote_.needs_handle_on_a_Connection": {
+            "name": "needs_handle_on_a_Connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote_,run.oops": {
+            "name": "oops",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote_,run.pty_True_uses_paramiko_get_pty": {
+            "name": "pty_True_uses_paramiko_get_pty",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Remote_,run.return_value_is_Result_subclass_exposing_cxn_used": {
+            "name": "return_value_is_Result_subclass_exposing_cxn_used",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ],
+                "result": [
+                    "run"
+                ]
+            }
+        },
+        "Remote_,start.sends_env_to_paramiko_update_environment_by_default": {
+            "name": "sends_env_to_paramiko_update_environment_by_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Remote_,start.uses_export_prefixing_when_inline_env_is_True": {
+            "name": "uses_export_prefixing_when_inline_env_is_True",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "CMD": [
+                    "typing.Text"
+                ],
+                "r": [
+                    "Remote"
+                ]
+            }
+        },
+        "Remote_,run,_OopsRemote.wait": {
+            "name": "wait",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Remote_,run.writes_remote_streams_to_local_streams": {
+            "name": "writes_remote_streams_to_local_streams",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "remote": []
+            },
+            "variables": {
+                "fakeout": [
+                    "StringIO"
+                ],
+                "CMD": [
+                    "typing.Text"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/tests/task.py": {
+        "_dummy": {
+            "name": "_dummy",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "task_,hosts_kwarg._run": {
+            "name": "_run",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "hosts": []
+            },
+            "variables": {}
+        },
+        "Task_.accepts_Invoke_level_init_kwargs": {
+            "name": "accepts_Invoke_level_init_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "t": [
+                    "Task"
+                ]
+            }
+        },
+        "task_.accepts_Invoke_level_kwargs": {
+            "name": "accepts_Invoke_level_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Task_.allows_hosts_kwarg": {
+            "name": "allows_hosts_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "Task_.body": {
+            "name": "body",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": [],
+                "parts": []
+            },
+            "variables": {}
+        },
+        "task_.body": {
+            "name": "body",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": [],
+                "parts": []
+            },
+            "variables": {}
+        },
+        "task_.does_not_touch_klass_kwarg_if_explicitly_given": {
+            "name": "does_not_touch_klass_kwarg_if_explicitly_given",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "ConnectionCall_,init.extends_with_init_kwargs_kwarg": {
+            "name": "extends_with_init_kwargs_kwarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "call": [
+                    "ConnectionCall"
+                ]
+            }
+        },
+        "global": {},
+        "ConnectionCall_,str.includes_init_kwargs_host_value": {
+            "name": "includes_init_kwargs_host_value",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "call": [
+                    "ConnectionCall"
+                ],
+                "expected": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "ConnectionCall_,init.inherits_regular_kwargs": {
+            "name": "inherits_regular_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "t": [
+                    "Task"
+                ],
+                "call": [
+                    "ConnectionCall"
+                ]
+            }
+        },
+        "task_,hosts_kwarg.mytask": {
+            "name": "mytask",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "c": []
+            },
+            "variables": {}
+        },
+        "task_.returns_Fabric_level_Task_instance": {
+            "name": "returns_Fabric_level_Task_instance",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "task_,hosts_kwarg.values_may_be_Connection_constructor_kwarg_dicts": {
+            "name": "values_may_be_Connection_constructor_kwarg_dicts",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "task_,hosts_kwarg.values_may_be_connection_first_posarg_strings": {
+            "name": "values_may_be_connection_first_posarg_strings",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        },
+        "task_,hosts_kwarg.values_may_be_mixed": {
+            "name": "values_may_be_mixed",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {}
+        }
+    },
+    "fabric-2.5.0/tests/transfer.py": {
+        "Transfer_,get,file_like_local_paths._get_to_stringio": {
+            "name": "_get_to_stringio",
+            "location": -1,
+            "return": [
+                "tuple[typing.Union[get,StringIO]]"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "fd": [
+                    "StringIO"
+                ],
+                "result": [
+                    "get"
+                ]
+            }
+        },
+        "Transfer_,put,file_like_local_paths._put_from_stringio": {
+            "name": "_put_from_stringio",
+            "location": -1,
+            "return": [
+                "tuple[typing.Union[put,StringIO]]"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "fd": [
+                    "StringIO"
+                ],
+                "result": [
+                    "put"
+                ]
+            }
+        },
+        "Transfer_,get,basics.accepts_local_and_remote_kwargs": {
+            "name": "accepts_local_and_remote_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,basics.accepts_local_and_remote_kwargs": {
+            "name": "accepts_local_and_remote_kwargs",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,basics.accepts_single_local_path_posarg": {
+            "name": "accepts_single_local_path_posarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,basics.accepts_single_remote_path_posarg": {
+            "name": "accepts_single_remote_path_posarg",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,mode_concerns.allows_disabling_local_mode_preservation": {
+            "name": "allows_disabling_local_mode_preservation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,mode_concerns.allows_disabling_remote_mode_preservation": {
+            "name": "allows_disabling_remote_mode_preservation",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,remote_end_is_directory.appends_local_file_basename": {
+            "name": "appends_local_file_basename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "sftp_": [
+                    "int"
+                ]
+            }
+        },
+        "global": {},
+        "Transfer_,put,file_like_local_paths.local_FLOs_are_rewound_before_putting": {
+            "name": "local_FLOs_are_rewound_before_putting",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {
+                "fd": [
+                    "Mock"
+                ],
+                "fd_": [
+                    "int"
+                ]
+            }
+        },
+        "Transfer_,get,path_arg_edge_cases.local_None_uses_remote_filename": {
+            "name": "local_None_uses_remote_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,path_arg_edge_cases.local_arg_cannot_be_None": {
+            "name": "local_arg_cannot_be_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,path_arg_edge_cases.local_arg_cannot_be_empty_string": {
+            "name": "local_arg_cannot_be_empty_string",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,path_arg_edge_cases.local_arg_is_required": {
+            "name": "local_arg_is_required",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,path_arg_edge_cases.local_empty_string_uses_remote_filename": {
+            "name": "local_empty_string_uses_remote_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,remote_end_is_directory,file_like_local_objects.name_attribute_present_appends_like_basename": {
+            "name": "name_attribute_present_appends_like_basename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "sftp_": [
+                    "int"
+                ],
+                "local": [
+                    "StringIO"
+                ],
+                "local_": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Transfer_,put,remote_end_is_directory,file_like_local_objects.no_name_attribute_raises_ValueError": {
+            "name": "no_name_attribute_raises_ValueError",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "sftp_": [
+                    "int"
+                ],
+                "local": [
+                    "StringIO"
+                ]
+            }
+        },
+        "Transfer_,put,mode_concerns.preserves_local_mode_by_default": {
+            "name": "preserves_local_mode_by_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp": []
+            },
+            "variables": {
+                "mock_os_": [
+                    "int"
+                ]
+            }
+        },
+        "Transfer_,get,mode_concerns.preserves_remote_mode_by_default": {
+            "name": "preserves_remote_mode_by_default",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,path_arg_edge_cases.remote_None_uses_local_filename": {
+            "name": "remote_None_uses_local_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,path_arg_edge_cases.remote_arg_cannot_be_None": {
+            "name": "remote_arg_cannot_be_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,path_arg_edge_cases.remote_arg_cannot_be_empty_string": {
+            "name": "remote_arg_cannot_be_empty_string",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,path_arg_edge_cases.remote_arg_is_required": {
+            "name": "remote_arg_is_required",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,path_arg_edge_cases.remote_cant_be_empty_if_local_file_like": {
+            "name": "remote_cant_be_empty_if_local_file_like",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,path_arg_edge_cases.remote_empty_string_uses_local_filename": {
+            "name": "remote_empty_string_uses_local_filename",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,file_like_local_paths.remote_path_from_local_StringIO": {
+            "name": "remote_path_from_local_StringIO",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,get,file_like_local_paths.remote_path_to_local_StringIO": {
+            "name": "remote_path_to_local_StringIO",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,init.requires_connection": {
+            "name": "requires_connection",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ]
+            }
+        },
+        "Transfer_,get,file_like_local_paths.result_contains_fd_for_local_path": {
+            "name": "result_contains_fd_for_local_path",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,put,file_like_local_paths.result_contains_fd_for_local_path": {
+            "name": "result_contains_fd_for_local_path",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {}
+        },
+        "Transfer_,is_remote_dir.returns_False_if_stat_raises_IOError": {
+            "name": "returns_False_if_stat_raises_IOError",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "sftp_": [
+                    "IOError"
+                ]
+            }
+        },
+        "Transfer_,is_remote_dir.returns_bool_of_stat_ISDIR_flag": {
+            "name": "returns_bool_of_stat_ISDIR_flag",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "sftp_": [
+                    "int"
+                ]
+            }
+        },
+        "Transfer_,get,basics.returns_rich_Result_object": {
+            "name": "returns_rich_Result_object",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "sftp_objs": []
+            },
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ],
+                "result": [
+                    "get"
+                ]
+            }
+        },
+        "Transfer_,put,basics.returns_rich_Result_object": {
+            "name": "returns_rich_Result_object",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "transfer": []
+            },
+            "variables": {
+                "cxn": [
+                    "Connection"
+                ],
+                "result": [
+                    "put"
+                ]
+            }
+        },
+        "Transfer_,get,mode_concerns.setup": {
+            "name": "setup",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {},
+            "variables": {
+                "attrs": [
+                    "SFTPAttributes"
+                ],
+                "self_": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "fabric-2.5.0/tests/util.py": {
+        "get_local_user_.KeyError_means_SaaS_and_thus_None": {
+            "name": "KeyError_means_SaaS_and_thus_None",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "getuser": []
+            },
+            "variables": {}
+        },
+        "get_local_user_.defaults_to_getpass_getuser": {
+            "name": "defaults_to_getpass_getuser",
+            "location": -1,
+            "return": [
+                "None"
+            ],
+            "arguments": {
+                "getuser": []
+            },
+            "variables": {}
+        },
+        "global": {}
+    }
+}

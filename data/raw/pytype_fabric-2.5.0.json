@@ -1,0 +1,15 @@
+{
+    "fabric-2.5.0/imports/default.py": {
+        "__getattr__": {
+            "name": "__getattr__",
+            "location": 3,
+            "return": [
+                "Any"
+            ],
+            "arguments": {
+                "name": []
+            }
+        },
+        "global": {}
+    }
+}
