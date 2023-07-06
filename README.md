@@ -1,4 +1,4 @@
-# PyAnnGen 2.0
+# (WIP) PyAnnGen 2.0
 
 A tool for generating type annotations for Python, with new support for variables.
 
